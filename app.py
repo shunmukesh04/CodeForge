@@ -932,7 +932,7 @@ if selected_nav == "Editor":
             st.session_state[f"editor-{language}"] = code
         
         # Tool buttons
-        col_run, col_download, col_share, col_copy = st.columns([1, 1, 1, 1])  # Added column for copy button
+        col_run, col_download, col_share = st.columns([1, 1, 1])  # Added column for copy button
         
         with col_run:
             run_button = st.button("▶ Run Code", use_container_width=True,help="Run your code")
@@ -953,20 +953,6 @@ if selected_nav == "Editor":
                 link = create_pastebin_link(code, language=language.lower())
                 st.markdown(f"### Copy this link to share with others:")
                 st.code(link, language='text')
-        
-        # Copy Code to Clipboard Button (added here)
-        with col_copy:
-            copy_button = st.button("📋", use_container_width=True,help="copy")
-
-        if copy_button:
-            # Copy the code to the clipboard using pyperclip
-            pyperclip.copy(code)
-            success_message = "Code copied!"
-            st.markdown(f"""
-                <div style='padding:10px; background-color:#dff0d8; color:#3c763d; border:1px solid #d6e9c6; border-radius:4px;'>
-                    ✅ {success_message}
-                </div>
-                """, unsafe_allow_html=True)
 
     with col2:
         # Input for program
