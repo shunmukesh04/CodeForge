@@ -21,7 +21,7 @@ client = Groq(api_key=openai.api_key)
 JUDGE0_URL = "https://judge0-ce.p.rapidapi.com/submissions"
 JUDGE0_HEADERS = {
     "Content-Type": "application/json",
-    "X-RapidAPI-Key": "5d188ad539msh5e4d6450c96f4fcp128cd0jsn7cf0d65f9fea",
+    "X-RapidAPI-Key": "dfe8e4a385mshf85714d2765af5ep1ea212jsnbc9eee191709",
     "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com"
 }
 
