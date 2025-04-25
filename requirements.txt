@@ -6,3 +6,4 @@ Pillow
 groq
 streamlit-option-menu
 pyperclip
+gunicorn
