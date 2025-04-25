@@ -1,0 +1,8 @@
+streamlit
+streamlit-ace
+requests
+openai
+Pillow
+groq
+streamlit-option-menu
+pyperclip
