@@ -1397,5 +1397,5 @@ with st.expander("📬 Contact Us"):
     
     - 📧 Email: [support@codeforge.ai](mailto:support@codeforge.ai)  
     - 🐦 Twitter: [@CodeForgeAI](https://twitter.com/CodeForgeAI)  
-    - 🌐 Website: [www.codeforge.ai](https://www.codeforge.ai)  
+    - 🌐 Website: [www.codeforge.ai](https://code-forge.streamlit.app/)  
     """)
