@@ -1,5 +1,5 @@
-# 🚀 Project Title
-**CodeForge** – Your All-in-One AI-Powered Code Editor
+# 🚀 **CodeForge**
+Your All-in-One AI-Powered Code Editor
 
 ## 📌 Problem Statement
 Problem Statement 6 – Redefine Developer Productivity with AI Tools
@@ -69,7 +69,7 @@ Explains code, detects errors, optimizes code, and saves chat history.
 **Pitch Deck / PPT Link:** [Paste Google Slides or PDF link here]
 
 ## ✅ Tasks & Bonus Checklist
-✅ Followed 2 social channels and filled the form  
+✅ Followed 3 social channels and filled the form  
 ✅ Bonus Task 1: Badge sharing and filled the form (2 points)  
 ✅ Bonus Task 2: Signed up for Sprint.dev and filled the form (3 points)
 
@@ -79,6 +79,8 @@ Explains code, detects errors, optimizes code, and saves chat history.
 - Python 3.10+
 - Streamlit
 - Groq API Key
+- Judge0 API Key
+- Pastebin API Key
 
 **Setup:**
 ```bash
@@ -97,12 +99,26 @@ cp .env.example .env
 
 # Run the Streamlit app
 streamlit run app.py
+```
+---
+🧬 **Future Scope**
+- 📈 Add real-time collaborative editing feature.
 
-🧬 Future Scope
-📈 Add real-time collaborative editing feature.
+- 🛡️ Integrate security vulnerability scanning for code.
 
-🛡️ Integrate security vulnerability scanning for code.
+- 🌐 Add more language support (localization).
 
-🌐 Add multi-language support (localization).
+- 🧠 Smarter AI chatbot that can review and suggest entire project structures.
+---
+📎 **Resources / Credits**
+- Groq API (AI code generation,Image to Code generation and chatbot)
 
-🧠 Smarter AI chatbot that can review and suggest entire project structures.
+- Streamlit (frontend and backend)
+
+- Tesseract OCR (for Image to Code)
+
+- Judge0 API (optional future use for compiling more languages)
+---
+🏁 **Final Words**:
+- Building CodeForge has been an incredible journey! 🚀
+We learned how to integrate advanced AI into simple user experiences, tackled real-world coding pain points, and made coding accessible, fun, and efficient for everyone. Thank you for the opportunity and support!
