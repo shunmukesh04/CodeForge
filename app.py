@@ -1395,7 +1395,7 @@ with st.expander("📬 Contact Us"):
     st.markdown("""
     Have feedback or need help? Reach out to us!
     
-    - 📧 Email: [support@codeforge.ai](mailto:support@codeforge.ai)  
+    - 📧 Email: [support@codeforge.ai](mailto:swamisivaramaraju@gmail.com)  
     - 🐦 Twitter: [@CodeForgeAI](https://twitter.com/CodeForgeAI)  
     - 🌐 Website: [www.codeforge.ai](https://code-forge.streamlit.app/)  
     """)
