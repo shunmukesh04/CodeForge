@@ -101,7 +101,7 @@ cp .env.example .env
 streamlit run app.py
 ```
 ---
-🧬 **Future Scope**
+## 🧬**Future Scope**
 - 📈 Add real-time collaborative editing feature.
 
 - 🛡️ Integrate security vulnerability scanning for code.
@@ -110,7 +110,7 @@ streamlit run app.py
 
 - 🧠 Smarter AI chatbot that can review and suggest entire project structures.
 ---
-📎 **Resources / Credits**
+## 📎**Resources / Credits**
 - Groq API (AI code generation,Image to Code generation and chatbot)
 
 - Streamlit (frontend and backend)
@@ -119,6 +119,6 @@ streamlit run app.py
 
 - Judge0 API (optional future use for compiling more languages)
 ---
-🏁 **Final Words**:
+## 🏁 **Final Words**:
 - Building CodeForge has been an incredible journey! 🚀
 We learned how to integrate advanced AI into simple user experiences, tackled real-world coding pain points, and made coding accessible, fun, and efficient for everyone. Thank you for the opportunity and support!
