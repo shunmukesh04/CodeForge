@@ -710,6 +710,7 @@ def load_css(theme_mode="dark"):
             }
         </style>
         """, unsafe_allow_html=True)
+
 # -------- Splash Screen --------
 def show_splash_screen():
     # Create a centered column layout with more emphasis on the center
