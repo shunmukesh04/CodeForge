@@ -38,6 +38,73 @@ def load_css(theme_mode="dark"):
     if theme_mode == "dark":
         st.markdown("""
         <style>
+            /* Splash Screen Styling */
+            .splash-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                width: 100%;
+                background-color: #1e1e2e;  /* Dark theme background */
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+            }
+
+            .splash-logo {
+                margin-bottom: 2rem;
+                animation: fadeInDown 1.5s ease-out;
+            }
+
+            .splash-title {
+                color: #bd93f9;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                animation: fadeInUp 1.5s ease-out;
+            }
+
+            .splash-subtitle {
+                color: #f8f8f2;
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+                animation: fadeInUp 1.8s ease-out;
+            }
+
+            .splash-progress {
+                width: 80%;
+                max-width: 400px;
+                animation: fadeIn 2s ease-out;
+            }
+
+            /* Splash screen animations */
+            @keyframes fadeInDown {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes fadeInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
             /* Dark Theme */
             .main {
                 background-color: #1e1e2e;
@@ -652,7 +719,45 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# -------- Splash Screen --------
+def show_splash_screen():
+    # Create a centered column layout with more emphasis on the center
+    col1, col2, col3 = st.columns([1, 2, 1])
+    
+    with col2:
+        # Create a container to center content
+        with st.container():
+            # Center the logo with CSS
+            st.markdown(
+                """
+                <div style='display: flex; justify-content: center;'>
+                    <img src='data:image/png;base64,{}' width='200'>
+                </div>
+                """.format(get_base64_encoded_image("logo.jpeg")),
+                unsafe_allow_html=True
+            )
+            
+            # Add title and subtitle centered
+            st.markdown("<h2 style='text-align: center; margin-top: 10px;'>CodeForge</h2>", unsafe_allow_html=True)
+            st.markdown("<p style='text-align: center; margin-bottom: 20px;'>AI-Powered Code Editor</p>", unsafe_allow_html=True)
+        
+        # Add animated progress bar
+        progress_text = "Initializing application..."
+        st.text(progress_text)
+        my_bar = st.progress(0)
+        
+        for percent_complete in range(100):
+            time.sleep(0.02)  # Adjust speed of loading here
+            my_bar.progress(percent_complete + 1)
+        
+        # Once progress reaches 100%, clear the splash screen
+        st.session_state.loading_complete = True
+        st.rerun()
 
+# Helper function to load image from file and convert to base64
+def get_base64_encoded_image(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode('utf-8')
 
 # Initialize theme preference in session state
 if "theme" not in st.session_state:
