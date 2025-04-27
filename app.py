@@ -710,15 +710,6 @@ def load_css(theme_mode="dark"):
             }
         </style>
         """, unsafe_allow_html=True)
-
-# -------- App Configuration --------
-st.set_page_config(
-    page_title="CodeForge | AI-Powered IDE",
-    page_icon="💻",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
 # -------- Splash Screen --------
 def show_splash_screen():
     # Create a centered column layout with more emphasis on the center
@@ -758,6 +749,22 @@ def show_splash_screen():
 def get_base64_encoded_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode('utf-8')
+# -------- App Configuration --------
+st.set_page_config(
+    page_title="CodeForge | AI-Powered IDE",
+    page_icon="💻",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Initialize loading state in session state
+if "loading_complete" not in st.session_state:
+    st.session_state.loading_complete = False
+
+# Show splash screen if loading is not complete
+if not st.session_state.loading_complete:
+    show_splash_screen()
+    st.stop()  # Stop the rest of the app from loading
 
 # Initialize theme preference in session state
 if "theme" not in st.session_state:
