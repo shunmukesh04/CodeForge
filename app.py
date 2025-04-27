@@ -723,8 +723,7 @@ def show_splash_screen():
             st.markdown(
                 """
                 <div style='display: flex; justify-content: center;'>
-                    <img src='https://raw.githubusercontent.com/sivaramaraju2124/CodeForge/main/logo.jpeg
-' width='200'>
+                    <img src='https://github.com/sivaramaraju2124/CodeForge/blob/main/logo.jpeg?raw=true' width='200'>
                 </div>
                 """,
                 unsafe_allow_html=True
