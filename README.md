@@ -31,8 +31,8 @@ Coding often requires switching between multiple tools for editing, compiling, d
 **Core Technologies Used:**
 - **Frontend:** Streamlit (Python-based web UI)
 - **Backend:** Streamlit Server + Python
-- **Database:** Not Required (Session State used)
-- **APIs:** Groq API (for AI Code Generator and AI Chatbot)
+- **Database:** Not Required (Session State used),SQLite for chatbot history
+- **APIs:** Groq API (for AI Code Generator,Image to Code Generator and AI Chatbot)
 - **Hosting:** Streamlit Cloud
 
 **Sponsor Technologies Used:**
