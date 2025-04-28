@@ -2,7 +2,7 @@
 Your All-in-One AI-Powered Code Editor
 
 ## 📌 Problem Statement
-Problem Statement 6 – Redefine Developer Productivity with AI Tools
+Problem Statement 1 –  Weave AI magic with Groq
 
 ## 🎯 Objective
 Coding often requires switching between multiple tools for editing, compiling, debugging, generating, and sharing code. This leads to a fragmented and time-consuming workflow, especially for beginners who struggle with setup, syntax, and understanding errors.
