@@ -65,8 +65,8 @@ Download your code files in a language-specific format.
 Explains code, detects errors, optimizes code, and saves chat history.
 
 ## 📽️ Demo & Deliverables
-**Demo Video Link:** [Paste YouTube or Loom link here]  
-**Pitch Deck / PPT Link:** [Paste Google Slides or PDF link here]
+**Demo Video Link:** https://youtu.be/OgAd5zTdQIc 
+**Pitch Deck / PPT Link:** https://app.presentations.ai/view/XIGJJG
 
 ## ✅ Tasks & Bonus Checklist
 ✅ Followed 3 social channels and filled the form  
