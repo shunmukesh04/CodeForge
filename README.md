@@ -13,10 +13,10 @@ Coding often requires switching between multiple tools for editing, compiling, d
 **Team Name:** Tech Rulers
 
 **Team Members:**
-- Shunmukesh Kanchi (https://www.linkedin.com/in/shunmukesh-kanchi-1a6b71258)
-- Rajendraprasad Kambhampati (http://www.linkedin.com/in/rajendra-prasad-kambhampati-79a433256)
-- Karri Sai Abhilash (https://www.linkedin.com/in/saiabhilashkarri)
-- Gorrela Swami Siva Rama Raju (www.linkedin.com/in/gorrela-swami-siva-rama-raju-07a570291)
+- Shunmukesh Kanchi -> (https://www.linkedin.com/in/shunmukesh-kanchi-1a6b71258)
+- Rajendraprasad Kambhampati -> (http://www.linkedin.com/in/rajendra-prasad-kambhampati-79a433256)
+- Karri Sai Abhilash -> (https://www.linkedin.com/in/saiabhilashkarri)
+- Gorrela Swami Siva Rama Raju -> (www.linkedin.com/in/gorrela-swami-siva-rama-raju-07a570291)
 
 **Our Approach:**
 - We chose this problem to simplify and enhance the coding experience for everyone, especially beginners.
